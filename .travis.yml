@@ -1,0 +1,11 @@
+sudo: false
+language: node.js
+
+node_js:
+  - "node"
+
+cache: npm
+
+script:
+  - npm run build
+  - npm tests

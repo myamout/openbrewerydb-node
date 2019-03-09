@@ -1,0 +1,36 @@
+{
+  "name": "openbrewerydb-node",
+  "version": "0.0.1",
+  "description": "Node.js wrapper for Open Brewery DB API",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "start": "parcel lib/index.js --target node",
+    "build": "parcel build lib/index.js --target node"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myamout/openbrewerydb-node.git"
+  },
+  "keywords": [
+    "node.js",
+    "parcel",
+    "async/await",
+    "node",
+    "npm"
+  ],
+  "author": "myamout",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/myamout/openbrewerydb-node/issues"
+  },
+  "homepage": "https://github.com/myamout/openbrewerydb-node#readme",
+  "devDependencies": {
+    "jest": "^24.3.1",
+    "parcel-bundler": "^1.12.0"
+  }
+}
