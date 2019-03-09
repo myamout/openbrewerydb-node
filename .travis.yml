@@ -7,5 +7,5 @@ node_js:
 cache: npm
 
 script:
-  - npm run build
-  - npm tests
+  - npm install
+  - npm test
