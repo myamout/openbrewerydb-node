@@ -11,4 +11,7 @@ openbrewery.cache();
 openbrewery.filter([cities], [names], [states], [type], [tags], pagination);
 openbrewery.search("phrase");
 
-need to add more tests
+- Update fetch function to handle pagination correctly
+- Fix breaks and tests
+- Reach out to author and publish to NPM
+- Reddit post on r/node and r/javascript
