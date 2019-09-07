@@ -1,13 +1,15 @@
 {
   "name": "openbrewerydb-node",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Node.js wrapper for Open Brewery DB API",
-  "main": "./lib/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "jest",
-    "test:coverage": "jest --coverage",
+    "test:coverage": "npm test -- --coverage",
+    "test:badges": "npm run test && jest-coverage-badges",
     "start": "parcel lib/index.js --target node",
-    "build": "parcel build lib/index.js --target node"
+    "build": "parcel build lib/index.js --target node",
+    "query": "node ./dist/index.js"
   },
   "engines": {
     "node": ">=10"
@@ -16,10 +18,19 @@
     "type": "git",
     "url": "git+https://github.com/myamout/openbrewerydb-node.git"
   },
+  "jest": {
+    "coverageReporters": [
+      "json-summary",
+      "text",
+      "lcov"
+    ],
+    "collectCoverage": true
+  },
   "keywords": [
     "node.js",
-    "parcel",
-    "async/await",
+    "promises",
+    "jest",
+    "library",
     "node",
     "npm"
   ],
@@ -30,7 +41,12 @@
   },
   "homepage": "https://github.com/myamout/openbrewerydb-node#readme",
   "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-jest": "^24.3.1",
     "jest": "^24.3.1",
+    "jest-coverage-badges": "^1.1.2",
+    "nock": "^10.0.6",
     "parcel-bundler": "^1.12.0"
   }
 }
