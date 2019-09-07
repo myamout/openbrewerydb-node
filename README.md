@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![node](https://img.shields.io/node/v/@babel/core)
 
-Node.js wrapper for [I'm an inline-style link with title](https://www.openbrewerydb.org/ "Open Brewery DB API")
+Node.js wrapper for [Open Brewery DB API](https://www.openbrewerydb.org/ "Open Brewery DB API")
 Credit for the API goes to Chris J. Mears
 
 
