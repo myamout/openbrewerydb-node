@@ -1,6 +1,7 @@
 # openbrewerydb-node
 [![Build Status](https://travis-ci.org/myamout/openbrewerydb-node.svg?branch=master)](https://travis-ci.org/myamout/openbrewerydb-node)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![node](https://img.shields.io/node/v/@babel/core)
 
 Node.js wrapper for Open Brewery DB API
 
@@ -17,6 +18,10 @@ Or
 ```javascript
 const { getAll } = require("openbrewerydb-node");
 ```
+
+#### Building
+openbrewerydb-node uses newer Node.js syntax and requires to be build first if you're running the examples locally.
+After checking out the repository run ```npm run build``` to create the distribution folder.
 
 #### Usage
 The data fetching functions in this library return a promise.
