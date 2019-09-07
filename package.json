@@ -2,7 +2,7 @@
   "name": "openbrewerydb-node",
   "version": "1.0.0",
   "description": "Node.js wrapper for Open Brewery DB API",
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest",
     "test:coverage": "npm test -- --coverage",
